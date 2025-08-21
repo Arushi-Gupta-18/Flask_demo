@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome, {{ user }}!</h2>
+<p>Select an option below:</p>
+<button onclick="location.href='{{ url_for('secrets') }}'">View Secrets</button>
+<button onclick="location.href='{{ url_for('logout') }}'">Logout</button>
+{% endblock %}
